@@ -1,0 +1,136 @@
+ 
+
+.home-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;          
+    background-color: var(--background-light);
+}
+
+.home-container h1 {
+    font-family: 'Pacifico', cursive; 
+    font-weight: bold;
+    color: #800020;                 
+    font-size: 64px;                 
+    text-align: center;
+    line-height: 1.2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+:root {
+    --primary-burgundy: #800020;
+    --secondary-rose: #C08081;
+    --background-light: #F8F4F4;
+    --card-white: #FFFFFF;
+    --text-dark: #2E2E2E;
+    --text-grey: #6B6B6B;
+    --hover-deep: #4B0012;
+    --accent-beige: #E8DCDC;
+}
+
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+
+nav {
+    background-color: var(--primary-burgundy);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+nav h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: var(--secondary-rose);
+}
+
+
+.container {
+    max-width: 500px;
+    background-color: var(--card-white);
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    color: var(--primary-burgundy);
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid var(--accent-beige);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-burgundy);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: var(--hover-deep);
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        margin: 30px 20px;
+        padding: 20px;
+    }
+}
